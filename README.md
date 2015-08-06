@@ -1,8 +1,10 @@
-# Integrated Demo
+# Test Driven Development Demo
 
 ## Configuration
 
-1. Place the following gems in the Gemfile:
+1. Start a new rails app with `rails new tdd_demo` and perform all of your required steps such as `gem install bundler` (if you don't already have it).
+
+2. Place the following gems in the Gemfile:
   ``` ruby
   group :test do
     gem 'minitest-rails', '2.1.1'
@@ -11,7 +13,7 @@
   end
   ```
 
-2. Run `bundle install`
+. Run `bundle install`
 
 3. Require the appropriate minitest files in test_helper.rb:
   ``` ruby
