@@ -81,7 +81,7 @@ end
 ```
 
 10. Run `bundle exec rake`
-- Errors should show up mentioning that there are no route that matches [GET] '/todos'
+* Errors should show up mentioning that there are no route that matches [GET] '/todos'
 
 11. Let's fix that by adding the route in the config/routes.rb file:
 ``` ruby
@@ -89,7 +89,7 @@ resources :todos, only: [:index] # get 'todos' => 'todo#index'
 ```
 
 12. Run 'bundle exec rake'
-- Errors should show up and complains about `uninitialized constant TodosController`
+* Errors should show up and complains about `uninitialized constant TodosController`
 
 13. Let's fix that by creating app/controllers/todos_controller.rb file and add the following code:
 ``` ruby
@@ -98,7 +98,7 @@ end
 ```
 
 14. Run 'bundle exec rake'
-- Errors should complain that `The action 'index' could not be found for TodosController`
+* Errors should complain that `The action 'index' could not be found for TodosController`
 
 15. Let's fix that by adding the index action into the todos_controller.rb
 ``` ruby
@@ -110,7 +110,7 @@ end
 ```
 
 16. Run 'bundle exec rake'
-- Errors should complain about 'Missing template todos/index'
+* Errors should complain about 'Missing template todos/index'
 
 17. Let's fix that by creating the template app/views/todos/index.html.erb and add the following code:
 ``` erb
@@ -123,8 +123,8 @@ end
 ```
 
 18. Run 'bundle exec rake'
-- This time, our test fails with `Expected not to include "Call Charter and get the cheapest plan"`
-- That was the completed todo item... it shouldn't show up on the index page.
+* This time, our test fails with `Expected not to include "Call Charter and get the cheapest plan"`
+* That was the completed todo item... it shouldn't show up on the index page.
 
 19. Let's fix that by going back into the controller and assign only the completed todo items to the instance variable.
 ``` ruby
@@ -138,6 +138,6 @@ end
 ```
 
 20. Let's run 'bundle exec rake'
-- Everything passes =)
+* Everything passes =)
 
 21. To prove that everything works, in the terminal run `RAILS_ENV=test rails s` and then navigate to localhost:3000/todos
