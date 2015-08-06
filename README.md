@@ -1,3 +1,7 @@
+# Integrated Demo
+
+## Configuration
+
 1. Place the following gems in the Gemfile:
   ``` ruby
   group :test do
@@ -40,6 +44,8 @@
     t.pattern = 'test/**/**/**_test.rb'
   end
   ```
+
+## Problem 1: As a user, I want to view incomplete todo items on the index page. so that I can quickly see what I need to do.
 
 6. Migrate a new model for todos:
   ``` ruby
