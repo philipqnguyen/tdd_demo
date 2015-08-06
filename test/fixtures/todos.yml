@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+incompleted:
+  name: Get groceries
+  description: Go to walmart and buy tacos
+  completed: false
+
+completed:
+  name: Order cable TV
+  description: Call Charter and get the cheapest plan
+  completed: true
