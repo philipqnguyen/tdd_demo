@@ -147,7 +147,3 @@
   * Everything passes =)
 
 21. To prove that everything works, in the terminal run `RAILS_ENV=test rails s` and then navigate to localhost:3000/todos
-
-## As a user, I want to create a new Todo item, so that I can continue to use it.
-
-
