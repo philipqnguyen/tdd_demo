@@ -131,7 +131,7 @@
   * This time, our test fails with `Expected not to include "Call Charter and get the cheapest plan"`
   * That was the completed todo item... it shouldn't show up on the index page.
 
-19. Let's fix that by going back into the controller and assign only the completed todo items to the instance variable.
+19. Let's fix that by going back into the controller and assign only the incomplete todo items to the instance variable.
   ``` ruby
   class TodosController < ApplicationController
     def index
@@ -145,3 +145,7 @@
   * Everything passes =)
 
 21. To prove that everything works, in the terminal run `RAILS_ENV=test rails s` and then navigate to localhost:3000/todos
+
+## As a user, I want to create a new Todo item, so that I can continue to use it.
+
+
